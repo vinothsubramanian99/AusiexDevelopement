@@ -16,7 +16,7 @@ builder.Logging.ClearProviders();
 builder.Logging.AddConsole(); 
 builder.Logging.AddFile("d:/VSCode/ApiProject3/Log/myapp-{Date}.txt");
 // Register your middleware as a service
- builder.Services.AddTransient<GlobalExceptionHandler>();
+ //builder.Services.AddTransient<GlobalExceptionHandler>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -55,7 +55,7 @@ app.UseHttpsRedirection();
   app.UseAuthorization();
  //  app.MapControllerRoute( name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
     app.MapControllers();
-app.UseMiddleware<GlobalExceptionHandler>();
+//app.UseMiddleware<GlobalExceptionHandler>();
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VSCode\\VinothDevelopementProject001\\ApiProject3.csproj": {}
+    "D:\\VSCode\\VinothDevelopementProject001-1\\ApiProject3.csproj": {}
   },
   "projects": {
-    "D:\\VSCode\\VinothDevelopementProject001\\ApiProject3.csproj": {
+    "D:\\VSCode\\VinothDevelopementProject001-1\\ApiProject3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VSCode\\VinothDevelopementProject001\\ApiProject3.csproj",
+        "projectUniqueName": "D:\\VSCode\\VinothDevelopementProject001-1\\ApiProject3.csproj",
         "projectName": "ApiProject3",
-        "projectPath": "D:\\VSCode\\VinothDevelopementProject001\\ApiProject3.csproj",
+        "projectPath": "D:\\VSCode\\VinothDevelopementProject001-1\\ApiProject3.csproj",
         "packagesPath": "C:\\Users\\vinoth.s\\.nuget\\packages\\",
-        "outputPath": "D:\\VSCode\\VinothDevelopementProject001\\obj\\",
+        "outputPath": "D:\\VSCode\\VinothDevelopementProject001-1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vinoth.s\\AppData\\Roaming\\NuGet\\NuGet.Config"
