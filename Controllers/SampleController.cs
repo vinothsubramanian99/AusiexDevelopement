@@ -25,33 +25,6 @@ namespace ApiProject3.Controllers
             _db = db;
             _logger = logger;
         }
-
-        [HttpGet("")]
-        public async Task<IActionResult> Get()
-        {
-            //try
-           // {
-                _logger.LogInformation("Getting all addresses");
-                var data = await _db.DuplicateData.ToListAsync();
-
-                _logger.LogInformation("Successfully retrieved data");
-                if (data == null || !data.Any())
-                {
-                    _logger.LogInformation("No data found");
-                    return NoContent(); // Returns a 204 No Content status code
-                }
-                else
-                {
-                    return Ok(data);
-                }
-           // }
-           /* catch (Exception ex)
-            {
-                _logger.LogError(ex, "An error occurred while retrieving data");
-                return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing your request.");
-            }*/
-        }
-
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] LoanDetailDTO loan)
         {
