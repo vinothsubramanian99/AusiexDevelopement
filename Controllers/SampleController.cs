@@ -28,11 +28,7 @@ namespace ApiProject3.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] LoanDetailDTO loan)
         {
-          //  try {
-               // if (loan == null)
-             //   { return NotFound();}
-              //  else
-              //  {  
+         
                     var S=new LoanDetail();
                     S.LoanNumber=loan.LoanNumber;
                     S.UserName=loan.UserName;
@@ -41,20 +37,7 @@ namespace ApiProject3.Controllers
                     await _db.SaveChangesAsync();
                      _logger.LogInformation("Data saved");
                     return Ok(loan);
-                //}
-           // }
-           /* catch (DbUpdateException dbEx){
-                _logger.LogError(dbEx, "A database update error occurred while creating DuplicateDatum.");
-                return StatusCode(StatusCodes.Status500InternalServerError, "A database error occurred while processing your request.");
-            }
-            catch (ArgumentNullException argEx){
-                _logger.LogError(argEx, "An argument null exception occurred.");
-                 return BadRequest("A required argument was null.");
-            }
-            catch (Exception ex) {
-                _logger.LogError(ex, "An unexpected error occurred while creating DuplicateDatum."); 
-                return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing your request.");
-            }*/
+            
 
 
 
