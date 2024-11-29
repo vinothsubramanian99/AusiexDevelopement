@@ -51,6 +51,7 @@ namespace ApiProject3.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing your request.");
             }*/
         }
+
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] LoanDetailDTO loan)
         {
@@ -81,6 +82,7 @@ namespace ApiProject3.Controllers
                 _logger.LogError(ex, "An unexpected error occurred while creating DuplicateDatum."); 
                 return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing your request.");
             }*/
+
 
 
 
