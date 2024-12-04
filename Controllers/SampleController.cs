@@ -22,8 +22,8 @@ namespace ApiProject3.Controllers
 
         public SampleController(AdventureWorksContext db, ILogger<SampleController> logger)
         {
-            _db = db;
-            _logger = logger;
+           // _db = db;
+          //  _logger = logger;
         }
 
         [HttpGet("")]
